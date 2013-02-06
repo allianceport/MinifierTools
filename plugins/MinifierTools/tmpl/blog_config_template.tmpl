@@ -1,0 +1,98 @@
+<h3>Default</h3>
+<mtapp:setting
+    id="minifyhtml"
+    show_label="0"
+    label="<__trans phrase="Minify HTML by default">">
+    <ul>
+        <li><input type="checkbox" value="1" name="minifyhtml" id="minifyhtml"<tmpl_if name=minifyhtml> checked="checked"</tmpl_if> /> <__trans phrase="Minify HTML by default"></li>
+    </ul>
+</mtapp:setting>
+<h3>HTML Minify Options</h3>
+<mtapp:setting
+    id="whitespace"
+    show_label="0"
+    label="<__trans phrase="Remove excess whitespace">">
+    <ul>
+        <li><input type="checkbox" value="1" name="whitespace" id="whitespace"<tmpl_if name=whitespace> checked="checked"</tmpl_if> /> <__trans phrase="Remove excess whitespace"></li>
+    </ul>
+</mtapp:setting>
+<mtapp:setting
+    id="shortertags"
+    show_label="0"
+    label="&lt;strong&gt; -&gt; &lt;b&gt;, etc">
+    <ul>
+        <li><input type="checkbox" value="1" name="shortertags" id="shortertags"<tmpl_if name=shortertags> checked="checked"</tmpl_if> /> <__trans phrase="&lt;strong&gt; -&gt; &lt;b&gt;, etc.."></li>
+    </ul>
+</mtapp:setting>
+<mtapp:setting
+    id="blink"
+    show_label="0"
+    label="<__trans phrase="No blink tags">">
+    <ul>
+        <li><input type="checkbox" value="1" name="blink" id="blink"<tmpl_if name=blink> checked="checked"</tmpl_if> /> <__trans phrase="No blink tags"></li>
+    </ul>
+</mtapp:setting>
+<mtapp:setting
+    id="contenttype"
+    show_label="0"
+    label="<__trans phrase="Remove default contenttype">">
+    <ul>
+        <li><input type="checkbox" value="1" name="contenttype" id="contenttype"<tmpl_if name=contenttype> checked="checked"</tmpl_if> /> <__trans phrase="Remove default contenttype"></li>
+    </ul>
+</mtapp:setting>
+<mtapp:setting
+    id="comments"
+    show_label="0"
+    label="<__trans phrase="Remove excess comments">">
+    <ul>
+        <li><input type="checkbox" value="1" name="comments" id="comments"<tmpl_if name=comments> checked="checked"</tmpl_if> /> <__trans phrase="Remove excess comments"></li>
+    </ul>
+</mtapp:setting>
+<mtapp:setting
+    id="entities"
+    show_label="0"
+    label="<__trans phrase="&amp;quot; -&gt; &quot;, etc.">">
+    <ul>
+        <li><input type="checkbox" value="1" name="entities" id="entities"<tmpl_if name=entities> checked="checked"</tmpl_if> /> <__trans phrase="&amp;quot; -&gt; &quot;, etc."></li>
+    </ul>
+</mtapp:setting>
+<mtapp:setting
+    id="dequote"
+    show_label="0"
+    label="<__trans phrase="Remove quotes from tag parameters where possible">">
+    <ul>
+        <li><input type="checkbox" value="1" name="dequote" id="dequote"<tmpl_if name=dequote> checked="checked"</tmpl_if> /> <__trans phrase="Remove quotes from tag parameters where possible"></li>
+    </ul>
+</mtapp:setting>
+<mtapp:setting
+    id="defcolor"
+    show_label="0"
+    label="<__trans phrase="Recode colors in shorter form. (#ffffff -&gt; white, etc.)">">
+    <ul>
+        <li><input type="checkbox" value="1" name="defcolor" id="defcolor"<tmpl_if name=defcolor> checked="checked"</tmpl_if> /> <__trans phrase="Recode colors in shorter form. (#ffffff -&gt; white, etc.)"></li>
+    </ul>
+</mtapp:setting>
+<mtapp:setting
+    id="javascript"
+    show_label="0"
+    label="<__trans phrase="Remove excess spaces and newlines in javascript code">">
+    <ul>
+        <li><input type="checkbox" value="1" name="javascript" id="javascript"<tmpl_if name=javascript> checked="checked"</tmpl_if> /> <__trans phrase="Remove excess spaces and newlines in javascript code"></li>
+    </ul>
+</mtapp:setting>
+<mtapp:setting
+    id="htmldefaults"
+    show_label="0"
+    label="<__trans phrase="Remove default values for some html tags">">
+    <ul>
+        <li><input type="checkbox" value="1" name="htmldefaults" id="htmldefaults"<tmpl_if name=htmldefaults> checked="checked"</tmpl_if> /> <__trans phrase="Remove default values for some html tags"></li>
+    </ul>
+</mtapp:setting>
+<mtapp:setting
+    id="lowercasetags"
+    show_label="0"
+    label="<__trans phrase="Translate all HTML tags to lowercase">">
+    <ul>
+        <li><input type="checkbox" value="1" name="lowercasetags" id="lowercasetags"<tmpl_if name=lowercasetags> checked="checked"</tmpl_if> /> <__trans phrase="Translate all HTML tags to lowercase"></li>
+    </ul>
+</mtapp:setting>

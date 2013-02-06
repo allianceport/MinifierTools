@@ -1,0 +1,60 @@
+id: 'MinifierTools'
+key: 'MinifierTools'
+name: 'Minifier Tools'
+description: Plugin to help minifying files
+version: 0.1
+author_name: 'Alliance Port, LLC'
+author_link: 'http://www.allianceport.jp/'
+l10n_class: 'MinifierTools::L10N'
+schema_version: 1
+
+settings:
+  minifyhtml:
+    default: 0
+    scope: 'blog'
+  whitespace: 
+    default: 0
+    scope: 'blog'
+  shortertags:
+    default: 0
+    scope: 'blog'
+  blink:
+    default: 0
+    scope: 'blog'
+  contenttype:
+    default: 0
+    scope: 'blog'
+  contenttype:
+    default: 0
+    scope: 'blog'
+  comments:
+    default: 0
+    scope: 'blog'
+  entities:
+    default: 0
+    scope: 'blog'
+  dequote:
+    default: 0
+    scope: 'blog'
+  defcolor:
+    default: 0
+    scope: 'blog'
+  javascript:
+    default: 0
+    scope: 'blog'
+  htmldefaults:
+    default: 0
+    scope: 'blog'
+  lowercasetags:
+    default: 0
+    scope: 'blog'
+
+blog_config_template: blog_config_template.tmpl
+
+callbacks:
+  build_page: $MinifierTools::MinifierTools::Callbacks::_build_page
+  
+tags:
+  modifier:
+    minify: $MinifierTools::MinifierTools::Tags::_filter_minify
+
