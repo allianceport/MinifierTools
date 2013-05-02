@@ -7,7 +7,7 @@ sub _filter_minify {
     my ( $str, $arg, $ctx ) = @_;
     my $p = MT->component('MinifierTools');
     my $scope = 'blog:' . $ctx->stash("blog_id");
-    if ( $arg == "html" ) {
+    if ( defined $arg && $arg eq "html" ) {
         my $h = HTML::Clean->new(\$str);
         my %options = (
             whitespace => $p->get_config_value( 'whitespace', $scope ),
