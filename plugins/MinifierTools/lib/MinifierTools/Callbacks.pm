@@ -9,7 +9,7 @@ sub _build_page {
     my $ctx = $args{'Context'};
     my $scope = 'blog:' . $ctx->stash("blog_id");
     my $minifyhtml = $p->get_config_value( 'minifyhtml', $scope );
-    if ( $minifyhtml == "1" ) {
+    if ( defined $minifyhtml && $minifyhtml eq "1" ) {
         my $h = HTML::Clean->new(\${$args{'Content'}});
         my %options = (
             whitespace => $p->get_config_value( 'whitespace', $scope ),
