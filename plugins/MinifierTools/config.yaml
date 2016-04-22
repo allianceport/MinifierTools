@@ -3,7 +3,7 @@ key: 'MinifierTools'
 name: 'Minifier Tools'
 description: Plugin to help minifying files
 version: 0.1
-author_name: 'Alliance Port, LLC'
+author_name: 'Alliance Port Inc.'
 author_link: 'http://www.allianceport.jp/'
 l10n_class: 'MinifierTools::L10N'
 schema_version: 1
